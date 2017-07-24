@@ -1,6 +1,37 @@
 \section{Introduction}
-Hello, World!
+Hello, World! å ä ö
+
+\begin{equation}
+J^{\alpha,\beta} = -(1-x^2) \frac{d^2}{dx^2} - [\beta - \alpha - (\alpha + \beta +2)x]\frac{d}{dx}.
+\end{equation}
+
 \section{Lol}
-asdf
-\subsection{Derivata}
-hejsan å ä ö
+
+\begin{eqnarray}
+u(\theta,\, t) &=& \sum_{n \in \Z} \left( \int_{2n\pi}^{2n\pi+\pi} W_t(\theta-\phi)f(\phi-2n\pi) \dd \phi + \int_{2n\pi - \pi}^{2n\pi}W_t(\theta-\phi)  f(2n\pi - \phi)\dd \phi \right)\nonumber\\
+&=& \sum_{n \in \Z} \left( \int_{0}^{\pi} W_t(\theta-\varphi-2n\pi) f(\varphi)\dd \varphi + \int_{0}^{\pi}W_t(\theta+\varphi-2 n \pi)  f(\varphi) \dd \varphi \right)\nonumber,
+\end{eqnarray}
+
+\subsection{Test}
+
+\begin{defi}
+For $t>0$ we define $h_t(x)$ by
+\begin{displaymath}
+h_t(x)=\frac{\vv'_t(x)}{ W'_t(x)}, \quad  0 < x \leq \pi,
+%h_t(z)=\frac{d\vv_t}{dz} \left( \frac{d W_t}{dz} \right)^{-1}, \quad  z\in[0,\pi]
+\end{displaymath}
+and as $\lim_{x \rightarrow 0^+}h_t(x)$ at $x=0$.
+\end{defi}
+
+
+\begin{thm}\label{thm:integralformula}
+Let $t>0$ and $\theta \in \zeropi$. Then
+\begin{equation}\label{eq:estimationsintegral}
+G^{0}_t(\cos\theta,\,1) =e^{t/4} \int_{\theta/2}^{\pi-\theta/2} \frac{ -\vv'_{t/4}(\gamma)  }{\sqrt{2\cos \theta - 2\cos 2\gamma}} \dd \gamma.
+\end{equation}
+\end{thm}
+
+
+\begin{proof}[Proof of Theorem \ref{thm:integralformula}]
+Let us first prove that $h_t(x) \leq 1$ for $x\in [0,\,\pi]$ and then prove that $h_t(x) \leq \frac{\pi}{t}(\pi -x) $ for $x\in [0,\,\pi]$.
+\end{proof}
