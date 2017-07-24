@@ -1,0 +1,84 @@
+
+\documentclass[11pt,a4paper]{article} %twoside
+
+% Packages and commands file
+\input{include/packagescommands}
+
+% Settings (Metadata)
+\input{include/settings}
+
+\begin{document}
+
+% Title page and abstract
+\title{\huge Practical Typesetting}
+\author{Daniel Andersson}
+\date{\today}
+\maketitle
+
+
+\begin{abstract}
+
+Furthermore, we prove that the periodized Gauss-Weierstrass kernel is strictly decreasing on $[0,\,\pi]$. Both an analytic and a probabilistic proof are given. A generalization of this result is also established for small $t$, saying that the spherical heat kernel on $S^2$ and $S^3$ is strictly decreasing as a function of the spherical distance between its two arguments.  
+\newline
+
+\noindent \textbf{Keywords:} Periodized Gauss-Weierstrass kernel, spherical heat kernel, Jacobi heat kernel, ultraspherical heat kernel, Brownian motion on $S^1$.
+\end{abstract}
+
+
+
+% Table of contents
+%\newpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+%\renewcommand{\chaptermark}[1]{\markboth{ #1}{}}
+\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+\setspecialhdr
+\tableofcontents
+
+\begin{comment}
+% Main area
+\newpage
+\end{comment}
+\setdefaulthdr
+\pagenumbering{arabic}	
+\setcounter{page}{1}
+
+
+% Content
+\input{content}
+
+
+\begin{thebibliography}{9}
+     \bibitem{MyFavorite}
+         {\sc Lamport, L.,}
+         ``\LaTeX - A Document Preparation System'',
+         Addison-Wesley, 1998.
+
+    \bibitem{BobsPaper}
+         {\sc Fillioque R.} and {\sc Heliotrope, B.,}
+         {\em Why Fermat's last theorem is really a lemma,}
+         American Mathematical Weekly,
+         Vol. 7, No. 1, pp 115-116, 1998.
+
+\end{thebibliography}
+
+% Appendices
+%\appendix
+\setdefaulthdr
+%\input{include/appendix1}
+
+
+\end{document}
+
+
+\begin{comment}
+\nocite{Pde}
+\nocite{Folland}
+\nocite{Orthogonal}
+% Nocite references
+\bibliography{references} % references.bib
+\addcontentsline{toc}{section}{\numberline{} Bibliography} % For pdf
+\setspecialhdr
+\end{comment}

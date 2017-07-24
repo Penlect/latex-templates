@@ -1,0 +1,94 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{ae}
+\usepackage{icomma}
+\usepackage{units}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{bbm}
+\usepackage{caption}
+\usepackage[square, numbers, sort]{natbib}
+\usepackage{multirow}
+\usepackage{array}
+%\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{fncychap}
+\usepackage[hyphens]{url}
+\usepackage[breaklinks,pdfpagelabels=false]{hyperref}
+\usepackage{lettrine}
+\usepackage{eso-pic}
+\usepackage{url}
+
+%\usepackage[pdftex]{graphicx}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{todonotes}
+\usepackage{enumerate}
+\usepackage[hmargin=2.6cm,vmargin=3.5cm]{geometry}
+\usepackage{verbatim}
+\usepackage{amssymb}
+\usepackage{cases}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\X}{\textbf{X}}
+\newcommand{\Y}{\textbf{Y}}
+\newcommand{\B}{\textbf{B}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\p}{\mathbb{P}}
+\newcommand{\e}{\mathbb{E}}
+\newcommand{\var}{\text{Var}}
+\newcommand{\mi}{\text{min}}
+\newcommand{\vv}{\vartheta}
+
+\newcommand{\lx}{L(X,\X,\mu)}
+\newcommand{\dd}{\, d}
+\newcommand{\dmu}{\,\mathrm{d}\mu}
+
+\newcommand{\G}[1]{G^{#1}(\cos \theta, \, 1 )}
+\newcommand{\zeropi}{[0,\,\pi]}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defi}[thm]{Definition}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{exe}{Exercise}
+
+
+
+
+% Fancyheader shortcuts
+\newcommand{\setdefaulthdr}{%
+\fancyhead[L]{\thesection\ \ \slshape  \rightmark }%  
+\fancyhead[R]{\leftmark}% 
+\fancyfoot[C]{\thepage}%
+}
+\newcommand{\setspecialhdr}{%
+\fancyhead[L]{ }%
+\fancyhead[R]{\slshape \leftmark}%
+\fancyfoot[C]{\thepage}%
+}
+
+
+
+\newcommand{\mail}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
+\newcommand{\backgroundpic}[3]{%
+	\put(#1,#2){
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\centering
+			\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{#3}
+			\vfill
+}}}
+
+
