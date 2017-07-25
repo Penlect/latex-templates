@@ -1,0 +1,84 @@
+\documentclass[landscape,letterpaper]{article}
+
+\usepackage[landscape]{geometry}
+\usepackage{kpfonts}
+\usepackage{color}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\setlength{\oddsidemargin}{0in}		% default=0in
+\setlength{\textwidth}{9in}		% default=9in
+
+\setlength{\columnsep}{0.5in}		% default=10pt
+\setlength{\columnseprule}{1pt}		% default=0pt (no line)
+
+\setlength{\textheight}{5.85in}		% default=5.15in
+\setlength{\topmargin}{-0.45in}		% default=0.20in
+\setlength{\headsep}{0.25in}		% default=0.35in
+\setlength{\marginparwidth}{15pt}
+
+\setlength{\parskip}{1.2ex}
+\setlength{\parindent}{0mm}
+\voffset=-1cm
+\hoffset=-1cm
+\definecolor{light-red}{rgb}{1,0.85,0.85}
+
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+\makeatother
+
+\newcommand*\Hs[1]{\ensuremath{{\color{black} #1}{\color{red}\varheartsuit}}}
+\newcommand*\Ss[1]{\ensuremath{{\color{black} #1}{\color{black}\spadesuit}}}
+\newcommand*\Rs[1]{\ensuremath{{\color{black} #1}{\color{red}\vardiamondsuit}}}
+\newcommand*\Ks[1]{\ensuremath{{\color{black} #1}{\color{black}\clubsuit}}}
+
+\let\oldsqsubset\sqsubset
+\renewcommand{\sqsubset}[1][0pt]{\mathrel{\raisebox{#1}{$\oldsqsubset$}}
+}
+
+\usepackage{array,booktabs,arydshln,xcolor}
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
+
+%\title{10 Minute Cards}
+
+\begin{document}
+%\maketitle
+\thispagestyle{empty}
+\section*{10 Minute Cards \hspace{12cm}    Name:}
+\begin{itemize}
+\item \textbf{J} = Jack, $\quad$ \textbf{Q} = Queen, $\quad$ \textbf{K} = King, $\quad$ \textbf{1} = Ace
+\item \textbf{2}, \textbf{3}, \textbf{4}, \textbf{5}, \textbf{6}, \textbf{7}, \textbf{8}, \textbf{9} and \textbf{10} as ususal.
+\end{itemize}
+{\large \textbf{DECK:}}
+\begin{center}%{| c "  c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c |}
+  \begin{tabular}{| c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]}}
+  	\multicolumn{1}{c}{}& \multicolumn{2}{ c }{1}& \multicolumn{2}{ c }{2}& \multicolumn{2}{ c }{3}& \multicolumn{2}{ c }{4}& \multicolumn{2}{ c }{5}& \multicolumn{2}{ c }{6}& \multicolumn{2}{ c }{7}& \multicolumn{2}{ c }{8}& \multicolumn{2}{ c }{9}& \multicolumn{2}{ c }{10}& \multicolumn{2}{ c }{11}& \multicolumn{2}{ c }{12}& \multicolumn{2}{ c }{13}& \multicolumn{2}{ c }{14}& \multicolumn{2}{ c }{15}& \multicolumn{2}{ c }{16}& \multicolumn{2}{ c }{17}& \multicolumn{2}{ c }{18}& \multicolumn{2}{ c }{19}& \multicolumn{2}{ c }{20}& \multicolumn{2}{ c }{21}& \multicolumn{2}{ c }{22}& \multicolumn{2}{ c }{23}& \multicolumn{2}{ c }{24}& \multicolumn{2}{ c }{25}& \multicolumn{2}{ c }{26} \\[2ex]
+	\hline
+      	${\huge \mathrel{\raisebox{-7pt}{\Ss{}} }}$ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& \\[1.5ex] \hline
+     	\rowcolor{light-red}     
+      	${\huge \mathrel{\raisebox{-7pt}{\Hs{}} }}$ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\[1.5ex] \hline
+     	\rowcolor{light-red}
+      	${\huge \mathrel{\raisebox{-7pt}{\Rs{}} }}$ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\[1.5ex] \hline
+      	${\huge \mathrel{\raisebox{-7pt}{\Ks{}} }}$ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\[1.5ex]
+    	\hline
+  \end{tabular}
+\end{center}
+\vspace{3.3cm}
+{\large \textbf{DECK:}}
+\begin{center}%{| c "  c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c " c  | c |}
+  \begin{tabular}{| c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]} c | c !{\VRule[1.5pt]}}
+  	\multicolumn{1}{c}{}& \multicolumn{2}{ c }{1}& \multicolumn{2}{ c }{2}& \multicolumn{2}{ c }{3}& \multicolumn{2}{ c }{4}& \multicolumn{2}{ c }{5}& \multicolumn{2}{ c }{6}& \multicolumn{2}{ c }{7}& \multicolumn{2}{ c }{8}& \multicolumn{2}{ c }{9}& \multicolumn{2}{ c }{10}& \multicolumn{2}{ c }{11}& \multicolumn{2}{ c }{12}& \multicolumn{2}{ c }{13}& \multicolumn{2}{ c }{14}& \multicolumn{2}{ c }{15}& \multicolumn{2}{ c }{16}& \multicolumn{2}{ c }{17}& \multicolumn{2}{ c }{18}& \multicolumn{2}{ c }{19}& \multicolumn{2}{ c }{20}& \multicolumn{2}{ c }{21}& \multicolumn{2}{ c }{22}& \multicolumn{2}{ c }{23}& \multicolumn{2}{ c }{24}& \multicolumn{2}{ c }{25}& \multicolumn{2}{ c }{26} \\[2ex]
+	\hline
+      	${\huge \mathrel{\raisebox{-7pt}{\Ss{}} }}$ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& \\[1.5ex] \hline
+     	\rowcolor{light-red}     
+      	${\huge \mathrel{\raisebox{-7pt}{\Hs{}} }}$ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\[1.5ex] \hline
+     	\rowcolor{light-red}
+      	${\huge \mathrel{\raisebox{-7pt}{\Rs{}} }}$ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\[1.5ex] \hline
+      	${\huge \mathrel{\raisebox{-7pt}{\Ks{}} }}$ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\[1.5ex]
+    	\hline
+  \end{tabular}
+\end{center}
+\end{document}
